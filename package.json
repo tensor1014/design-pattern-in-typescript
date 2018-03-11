@@ -1,0 +1,39 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "merge-sort.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "tslint . && npm run clean && npm run build && npm test",
+    "clean": "rimraf ./dist",
+    "build": "tsc --watch --outDir ./dist",
+    "lint": "tslint .",
+    "test": "tslint .&& mocha --timeout 3000 --require espower-typescript/guess --project ./tsconfig.json ./test/**/*.test.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.92",
+    "@types/mocha": "^2.2.46",
+    "@types/power-assert": "^1.4.29",
+    "espower-typescript": "^8.1.2",
+    "mocha": "^4.1.0",
+    "power-assert": "^1.4.4",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "module-alias": "^2.0.3",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "_moduleAliases": {
+    "@src": "src"
+  }
+}

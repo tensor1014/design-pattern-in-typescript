@@ -1,0 +1,30 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "pretty": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": false,
+    "skipDefaultLibCheck": false,
+    "inlineSourceMap": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "removeComments": true,
+    "noEmitOnError": false,
+    "preserveConstEnums": true,
+    "watch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@interfaces": ["interfaces"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

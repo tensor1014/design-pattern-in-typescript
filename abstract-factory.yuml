@@ -1,0 +1,14 @@
+//  {type:class}
+
+[Class],
+[Directional]->[Order],
+[Bidirectional]<->[Order],
+[Aggregation]+-[Order] or [Customer]<>-[Order],
+[Composition]++-[Order],
+[Inheritance]^[Cool Customer], [Customer]^[Uncool Customer],
+[Dependencies]uses-.->[PaymentStrategy],
+[Cardinality]<1-1..2>[Address],
+[LabelsPerson]customer-billingAddress[Address],
+[NotesAddress]-[note: Value Object],
+[FullClassCustomer|Forename;Surname;Email|Save()],
+[ColorsplashCustomer{bg:orange}]<>1->*[Order{bg:green}]]
